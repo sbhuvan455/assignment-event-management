@@ -1,0 +1,16 @@
+name: event-management
+
+services:
+  mongo:
+    image: mongo:7
+    container_name: event-mongo
+    restart: unless-stopped
+    ports:
+      - "27017:27017"
+    volumes:
+      - mongo_data_events:/data/db
+    environment:
+      MONGO_INITDB_DATABASE: event-management
+
+volumes:
+  mongo_data_events:

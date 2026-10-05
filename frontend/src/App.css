@@ -1,0 +1,104 @@
+#root {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.auth-container {
+    max-width: 400px;
+    margin: 60px auto;
+}
+
+.auth-container form,
+.events-page form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+input,
+textarea,
+select {
+    padding: 8px;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+}
+
+textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+button {
+    padding: 8px 12px;
+    border: 1px solid #888;
+    border-radius: 4px;
+    background: #eee;
+}
+
+button:hover:not(:disabled) {
+    background: #ddd;
+}
+
+.auth-container button {
+    margin-top: 5px;
+}
+
+.error {
+    color: #c00;
+}
+
+.success {
+    color: #087f23;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+nav a {
+    text-decoration: none;
+}
+
+nav button {
+    margin-left: 5px;
+}
+
+.events-page > form {
+    flex-direction: row;
+    margin-bottom: 20px;
+}
+
+.events-page > form input {
+    flex: 1;
+}
+
+.event {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.event button {
+    margin-right: 8px;
+}
+
+hr {
+    margin: 25px 0;
+    border: 0;
+    border-top: 1px solid #ddd;
+}
+
+.registration {
+    background: white;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 15px 0;
+}
+
+.registration button {
+    margin-top: 5px;
+}
